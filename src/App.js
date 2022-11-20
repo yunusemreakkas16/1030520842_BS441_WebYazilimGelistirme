@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './Assets/App.css';
+import Game from "./Components/Game";
+import {Row, Col, Container} from "react-bootstrap";
+import Weather from "./Components/Weather";
+import Info from "./Components/Info";
+import Music from "./Components/Music";
+import "./Assets/App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+          <Container id="cont">
+              <Row>
+                  <Col className="roww" xs="9">
+                  </Col>
+                  <Col className="roww" xs="3">
+                      <Weather/>
+                  </Col>
+              </Row>
+              <Row>
+                  <Col id="col" className="roww" xs="3">
+                      <Info/>
+                  </Col>
+                  <Col  className="roww" xs="6">
+                      <Game/>
+                  </Col>
+                  <Col  className="roww" xs="3">
+                      <Row className="roww">
+                          <Music/>
+                      </Row>
+                  </Col>
+              </Row>
+          </Container>
+      </div>
   );
 }
 

@@ -1,11 +1,13 @@
-
-.roww{
+.row{
     border: 1px solid red;
     padding: 0px;
+    margin: 0px;
 }
 #cont{
     max-width: 100%;
 }
-.App{
-    background-color: antiquewhite;
+.word{
+    padding: 0px;
+    margin: 0px;
+
 }
