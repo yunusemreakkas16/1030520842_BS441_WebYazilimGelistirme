@@ -20,7 +20,7 @@ function Game(){
     console.log("fgfgfg")
 
 
-    for(;flag===true;) {
+    for(;flag===false;) {
         PlayerCard = Math.random(0,2);
         BotCard    = Math.random(0,2);
 
