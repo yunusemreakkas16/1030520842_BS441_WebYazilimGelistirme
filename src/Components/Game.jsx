@@ -18,6 +18,7 @@ function Game(){
 
     //Default single player design.
     console.log("fgfgfg")
+    //Ilgilen
 
 
     for(;flag===false;) {
