@@ -21,7 +21,7 @@ function App() {
                       <Info/>
                   </Col>
                   <Col  className="roww" xs="6">
-                      <Game/>
+                     <h1>asadas</h1> <Game/>
                   </Col>
                   <Col  className="roww" xs="3">
                       <Row className="roww">

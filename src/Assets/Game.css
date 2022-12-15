@@ -11,3 +11,11 @@
     margin: 0px;
 
 }
+
+.size{
+    height:  100px;
+    width:   100px;
+}
+.align{
+    margin:  10px;
+}
