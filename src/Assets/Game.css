@@ -17,5 +17,15 @@
     width:   100px;
 }
 .align{
-    margin:  10px;
+    margin:10px;
+}
+.alignv1
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+.forlink
+{
+    color: blanchedalmond !important;
 }

@@ -1,32 +1,27 @@
 import Game from "./Components/Game";
 import {Row, Col, Container} from "react-bootstrap";
-import Weather from "./Components/Weather";
 import Info from "./Components/Info";
-import Music from "./Components/Music";
 import "./Assets/App.css";
+import {Route, Routes} from "react-router-dom";
+import SinglePlayer from "./Components/SinglePlayer";
+import MultiPlayer from "./Components/MultiPlayer";
 
 function App() {
   return (
       <div className="App">
           <Container id="cont">
-              <Row>
-                  <Col className="roww" xs="9">
-                  </Col>
-                  <Col className="roww" xs="3">
-                      <Weather/>
-                  </Col>
-              </Row>
-              <Row>
+              <Row id="das">
                   <Col id="col" className="roww" xs="3">
                       <Info/>
                   </Col>
-                  <Col  className="roww" xs="6">
-                     <h1>asadas</h1> <Game/>
-                  </Col>
-                  <Col  className="roww" xs="3">
-                      <Row className="roww">
-                          <Music/>
-                      </Row>
+                  <Col  xs="9">
+
+                          <Routes>
+                              <Route path="/SinglePlayer" element={<SinglePlayer/>}/>
+                              <Route path="/MultiPlayer"  element={<MultiPlayer/>}/>
+                              <Route path="/" element={<Game/>}/>
+                          </Routes>
+
                   </Col>
               </Row>
           </Container>
