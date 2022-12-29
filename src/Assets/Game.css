@@ -12,12 +12,23 @@
 
 }
 
+
 .size{
     height:  100px;
     width:   100px;
 }
 .align{
     margin:10px;
+    background-color: brown  !important;
+    border: none !important;
+}
+.alignv2{
+    margin:10px;
+    background-color: antiquewhite  !important;
+    border: solid 1px brown !important;
+}
+.align:hover{
+    background-color: antiquewhite !important;
 }
 .alignv1
 {
@@ -28,4 +39,8 @@
 .forlink
 {
     color: blanchedalmond !important;
+}
+
+.disable{
+    pointer-events: none;
 }

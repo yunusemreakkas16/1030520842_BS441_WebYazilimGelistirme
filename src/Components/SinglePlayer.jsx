@@ -7,13 +7,6 @@ import scissor from '../Makas.png';
 import paper from '../Kağıt.png';
 
 function Game(){
-
-
-    const  Rock       = 0;
-    const  Scissor    = 1;
-    const  Paper      = 2;
-
-
     let    BotCard;
     const  choose ="You are in Singleplayer mode. Choose your figure.";
     //Default single player design.
@@ -24,7 +17,7 @@ function Game(){
     const [flag,  setFlag]           = useState(true);
     const [Bcount,setBCount]         = useState(0);
     const [Images,setImages]         = useState(null);
-    const [BImages,setbImages]          = useState(null);
+    const [BImages,setbImages]       = useState(null);
     useEffect(()=>{
         if(PlayerCard!== null) {
             if (flag) {
